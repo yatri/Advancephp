@@ -1,0 +1,42 @@
+body { background:#1cacd5;}
+#container { width:930px; height:635px; margin:0 auto; padding:15px; background:#f1f3f3; border-radius:8px; -webkit-border-radius:8px; -moz-border-radius:8px; margin-top:-8px;}
+#wrapper { width:930px; height:auto; margin:0 auto; padding:0px;}
+.clearboth { clear:both; margin:0px; padding:0px; color:#1675b7;}
+.date { color:#5f6060;}
+.title { font-family:"Times New Roman", Times, serif; font-size:24px; color:#1675b7; font-weight:bold; text-decoration:underline; margin-top:4px;}
+.tblstudent { width: auto; height:auto; border:1px solid #166ca8; padding:7px;}
+.tblstudent .top { width:auto; height:auto; border-bottom:1px solid #39F; padding-bottom:5px;}
+.buttons { background:#00a1e0; border-radius:20px; padding:4px 8px 4px 8px; cursor:pointer; text-decoration:none; color:#f0f0f0; font-family:Arial, Helvetica, sans-serif; font-size:14px; transition:background 0.5s;}
+.buttons:hover { background:#1f73b4; text-decoration:none;}
+a { text-decoration:none; font-family:Arial, Helvetica, sans-serif; color:#067600; font-size:15px;}
+a:hover { text-decoration:underline;}
+table { border:1px solid #666; border-collapse:collapse; margin-top:4px; font-family:Arial, Helvetica, sans-serif;}
+th,td { padding:3px; font-family:Arial, Helvetica, sans-serif; border:1px solid #39F;}
+th { padding:6px 4px 6px 4px; background:#c3cedf; color:#1861cf; font-size:14px;}
+td { font-size:13px; color:#404041;}
+label,input {font-family:Arial, Helvetica, sans-serif; font-size:14px;}
+input {border: 1px solid #dadada;border-radius: 7px; height:20px; padding:3px 5px 3px 5px;}
+input:focus{outline: none;border-color: #9ecaed;box-shadow: 0 0 10px #9ecaed;}
+.notify{width: 55%;background:#3dc0f3;padding: 5px;color: #fff;text-align: center;font-size: 18px;margin-bottom:10px;margin-top:10px;position:relative; font-family:Tahoma, Geneva, sans-serif;}
+.notify span{position: absolute;right: -7px;top: -10px;background: gray;cursor:pointer;}
+#menu { font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#06F; width:600px; height:35px;}
+#menu ul{ list-style:none; margin:0px; padding:7px 0 0 0 ; display:inline;}
+#menu ul li{ text-decoration:none; display:inline; transition:background 0.5s; margin:0px;padding:10px; color:#FFF; background:#4677b9; border-radius:7px; cursor:pointer;}
+#menu ul li:hover { background:#036;}
+#menu ul li a{ color:#FFF; font-size:16px; text-decoration:none;}
+.loading{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+}
+
+.loader {
+	position: relative;
+	left: 45%;
+	top: 40%;
+	color: #fff;
+	font-size: 22px;
+}
