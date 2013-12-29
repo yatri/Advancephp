@@ -3,19 +3,19 @@
     $studentviewObj = new Student;
     $row = $studentviewObj->getAll();
  ?>
-<h4 class="clearboth" style="margin-top:-5px; padding-bottom:7px;">tbl_student :</h4>
+<h4 class="clearboth" style="margin-top:-5px; padding-bottom:7px;">Student Table :</h4>
         <div class="tblstudent"><!--student table starts here-->
         	<div class="top">
         		<a href="index.php?view=studentnew" class="buttons">Add new record</a>
-                <a href="index.php?page=studentdeleteall" class="buttons">Delete all records</a>
+                <a href="index.php?action=student&mode=truncate" class="buttons">Delete all records</a>
         	</div>
 <table>
 	<thead>
 		<tr>
-			<th>s_id</th>
-            <th>s_name</th>
-            <th>s_address</th>
-            <th>s_contact</th>
+			<th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Contact</th>
             <th colspan="2">Actions</th>
    		</tr>
 	</thead>
@@ -32,7 +32,7 @@
            		<a href= "index.php?view=studentnew&id=<?php echo $val['s_id'];?>" style="font-family:'Times New Roman', Times, serif; font-size:15px; font-weight:bold;">Edit</a>
          	</td>
             <td width="10%">
-            	<a href= "index.php?cont=student&mode=delete&id=<?php echo $val['s_id'];?>" style="font-family:'Times New Roman', Times, serif; font-size:15px; font-weight:bold;">Delete</a>
+            	<a href= "index.php?action=student&mode=delete&id=<?php echo $val['s_id'];?>" style="font-family:'Times New Roman', Times, serif; font-size:15px; font-weight:bold;">Delete</a>
         	</td>
       	</tr>
   	<?php } ?>

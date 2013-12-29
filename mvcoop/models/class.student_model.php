@@ -34,7 +34,7 @@ class student_model{
 			echo "error in editing";
 		}
 	}
-	function adstudent($s_name,$s_address,$s_contact){
+	function addstudent($s_name,$s_address,$s_contact){
 		$this->name=$s_name;
 		$this->address=$s_address;
 		$this->contact=$s_contact;
@@ -42,9 +42,32 @@ class student_model{
 		if(mysql_query($sql)){
 			?> <script>window.location.href='index.php?view=student&msg=1';</script> <?php
 		}
-		else { echo "Error while inserting.";
+		else {
+			 echo "Error while inserting.";
 		}
 	}
+	function deletestd($s_id){
+		$this->id=$s_id;
+		
+		$sql="DELETE FROM tb1_student WHERE s_id='$this->id'";
+		if(mysql_query($sql)){
+			?><script>window.location.href="index.php?page=student&msg=4";</script><?php
+		}
+		else {
+			echo"error while deleting data";
+		}
+	}
+	function truncatetable(){
+		$sql="TRUNCATE table tbl_student";
+		if(mysql_query($sql)){
+			//header('Location:index.php?msg=2');
+			?><script>window.location.href="index.php?page=student&msg=2";</script><?php
+		}
+		else {
+		 	echo "Error while deleting all rows.";
+		}	
+	}
 }
+?>
 
 

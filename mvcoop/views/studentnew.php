@@ -12,7 +12,7 @@
 <style>
 	.error { font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#F00;}
 </style>
-<h4 class="clearboth" style="margin-top:-5px;">tbl_company :</h4>
+<h4 class="clearboth" style="margin-top:-5px;">Employee Table :</h4>
         <div class="tblstudent"><!--company table starts here-->
         	<div class="top">
         		<a href="index.php?view=studentnew" class="buttons">Add new record</a>

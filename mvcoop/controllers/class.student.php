@@ -18,14 +18,14 @@ class student{
 		$studentmodelObj = new student_model();
 		if($_POST){
 			$sname=$_POST['name'];
-			$address=$_POST['address'];
-			$contact=$_POST['contact'];
+			$saddress=$_POST['address'];
+			$scontact=$_POST['contact'];
 		}
 		if($sid){
-			$studentmodelObj->update($sid,$sname,$address,$contact);
+			$studentmodelObj->update($sid,$sname,$saddress,$scontact);
 		}
 		else{
-			$studentviewObj->addstudent($name,$address,$contact);
+			$studentmodelObj->addstudent($sname,$saddress,$scontact);
 		}
 		
 	}
@@ -33,6 +33,10 @@ class student{
 		$s_id=@$_GET['id'];
 		$studentmodelObj = new student_model();
 		$studentmodelObj->deletestd($s_id);
+	}
+	function deleteallrecord(){
+		$studentmodelobj=new student_model();
+		$studentmodelobj->truncatetable();
 	}
 }//end of class
 //for add and edit operations
@@ -45,6 +49,10 @@ if(@$_GET['mode']){
 		break;
 		case 'delete':
 			$studentObj->deleteStudent();
+			break;
+		case 'truncate':
+			$studentObj->deleteallrecord();
+			break;
 		default:
 
 		}
