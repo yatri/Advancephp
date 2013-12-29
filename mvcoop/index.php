@@ -23,15 +23,29 @@
         </div>
 <?php } ?>
 		<?php 
-				if(@$_GET['view']){
-					include 'views/'.$_GET['view'].'.php';
+				$folder=@$_GET['folder'];
+				if($folder=='std'){
+					if(@$_GET['view']){
+						include 'views/student/'.$_GET['view'].'.php';
+					}
+					if(@$_GET['action']){
+						include 'controllers/student/'.'class.'.$_GET['action'].'.php';
+					}
+					
 				}
-				if(@$_GET['action']){
-					include 'controllers/'.'class.'.$_GET['action'].'.php';
+				else if($folder=='cmpy'){
+					if(@$_GET['view']){
+						include 'views/company/'.$_GET['view'].'.php';
+					}
+					if(@$_GET['action']){
+						include 'controllers/company/'.'class.'.$_GET['action'].'.php';
+					}
+					
 				}
 				else{
-					include 'welcome.php';
-				}
+						include 'welcome.php';
+					}
+			
 		?>
 <?php include_once('includes/footer.php'); ?>
         
