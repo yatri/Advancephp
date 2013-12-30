@@ -35,10 +35,10 @@
 				}
 				else if($folder=='cmpy'){
 					if(@$_GET['view']){
-						include 'views/company/'.$_GET['view'].'.php';
+						include 'views/employee/'.$_GET['view'].'.php';
 					}
 					if(@$_GET['action']){
-						include 'controllers/company/'.'class.'.$_GET['action'].'.php';
+						include 'controllers/employee/'.'class.'.$_GET['action'].'.php';
 					}
 					
 				}
