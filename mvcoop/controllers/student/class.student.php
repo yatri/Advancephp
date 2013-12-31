@@ -2,6 +2,7 @@
 require 'models/student/class.student_model.php';
 class student{
 	private $id;
+	private $retdata;
 	
 	function __construct(){
 		
@@ -46,6 +47,15 @@ class student{
 		$studentmodelobj=new student_model();
 		$studentmodelobj->truncatetable();
 	}
+	function search(){
+		$studentmodelobj=new student_model();
+		if($_POST){
+			$textinput=@$_POST['name'];
+			$optionsel=@$_POST['searchwith'];
+			$data=$studentmodelobj->getresult($optionsel,$textinput);
+		}
+		
+	}
 }//end of class
 //for add and edit operations
 if(@$_GET['mode']){
@@ -60,6 +70,9 @@ if(@$_GET['mode']){
 			break;
 		case 'truncate':
 			$studentObj->deleteallrecord();
+			break;
+		case 'search':
+			$studentObj->search();
 			break;
 		default:
 

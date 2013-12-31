@@ -36,7 +36,7 @@ class employee_model{
 				
 		$sql= "UPDATE employee SET e_name='$this->name',e_address='$this->address',e_contact='$this->contact' WHERE e_id='$this->id'";
 		if(mysql_query($sql)){
-			?><script>window.location.href='index.php?view=student&msg=3';</script><?php
+			?><script>window.location.href='home.php?view=student&msg=3';</script><?php
 		}
 		else {
 			echo "error in editing";
@@ -48,7 +48,7 @@ class employee_model{
 		$this->contact=$s_contact;
 		$sql="INSERT INTO employee VALUES('','$this->name','$this->address','$this->contact')";
 		if(mysql_query($sql)){
-			?> <script>window.location.href='index.php?view=student&msg=1';</script> <?php
+			?> <script>window.location.href='home.php?view=student&msg=1';</script> <?php
 		}
 		else {
 			 echo "Error while inserting.";
@@ -59,7 +59,7 @@ class employee_model{
 		
 		$sql="DELETE FROM employee WHERE e_id='$this->id'";
 		if(mysql_query($sql)){
-			?><script>window.location.href="index.php?page=student&msg=4";</script><?php
+			?><script>window.location.href="home.php?page=student&msg=4";</script><?php
 		}
 		else {
 			echo"error while deleting data";
@@ -68,8 +68,8 @@ class employee_model{
 	function truncatetable(){
 		$sql="TRUNCATE table employee";
 		if(mysql_query($sql)){
-			//header('Location:index.php?msg=2');
-			?><script>window.location.href="index.php?page=student&msg=2";</script><?php
+			//header('Location:home.php?msg=2');
+			?><script>window.location.href="home.php?page=student&msg=2";</script><?php
 		}
 		else {
 		 	echo "Error while deleting all rows.";

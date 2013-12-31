@@ -17,7 +17,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="99" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.aptana.editor.php" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.php" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -26,10 +26,61 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="com.aptana.editor.php" name="index.php" partName="index.php" path="C:/xampp/htdocs/myworkspace/mvcoop/index.php" title="index.php" tooltip="mvcoop/index.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mvcoop/index.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1172" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.php" name="studentnew.php" partName="studentnew.php" path="C:/xampp/htdocs/myworkspace/mvcoop/views/student/studentnew.php" title="studentnew.php" tooltip="mvcoop/views/student/studentnew.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mvcoop/views/student/studentnew.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="180" selectionTopPixel="180"/>
+</editor>
+<editor id="com.aptana.editor.php" name="student.php" partName="student.php" path="C:/xampp/htdocs/myworkspace/mvcoop/views/student/student.php" title="student.php" tooltip="mvcoop/views/student/student.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mvcoop/views/student/student.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2290" selectionTopPixel="360"/>
+</editor>
+<editor id="com.aptana.editor.php" name="class.student.php" partName="class.student.php" path="C:/xampp/htdocs/myworkspace/mvcoop/controllers/student/class.student.php" title="class.student.php" tooltip="mvcoop/controllers/student/class.student.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mvcoop/controllers/student/class.student.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1333" selectionTopPixel="1239"/>
+</editor>
+<editor id="com.aptana.editor.php" name="class.student_model.php" partName="class.student_model.php" path="C:/xampp/htdocs/myworkspace/mvcoop/models/student/class.student_model.php" title="class.student_model.php" tooltip="mvcoop/models/student/class.student_model.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mvcoop/models/student/class.student_model.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="32" selectionOffset="2213" selectionTopPixel="1320"/>
+</editor>
+<editor id="com.aptana.editor.php" name="header.php" partName="header.php" path="C:/xampp/htdocs/myworkspace/mvcoop/includes/header.php" title="header.php" tooltip="mvcoop/includes/header.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mvcoop/includes/header.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="453" selectionTopPixel="59"/>
+</editor>
+<editor id="com.aptana.editor.php" name="auth.php" partName="auth.php" path="C:/xampp/htdocs/myworkspace/mvcoop/auth.php" title="auth.php" tooltip="mvcoop/auth.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mvcoop/auth.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="com.aptana.editor.php" name="login.php" partName="login.php" path="C:/xampp/htdocs/myworkspace/mvcoop/login.php" title="login.php" tooltip="mvcoop/login.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mvcoop/login.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="551" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.php" name="class.user.php" partName="class.user.php" path="C:/xampp/htdocs/myworkspace/mvcoop/controllers/user/class.user.php" title="class.user.php" tooltip="mvcoop/controllers/user/class.user.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mvcoop/controllers/user/class.user.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="216" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.php" name="class.user_model.php" partName="class.user_model.php" path="C:/xampp/htdocs/myworkspace/mvcoop/models/user/class.user_model.php" title="class.user_model.php" tooltip="mvcoop/models/user/class.user_model.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mvcoop/models/user/class.user_model.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="373" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -40,7 +91,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (2 items)"/>
+<category IMemento.internal.id="Errors (1 item)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="120" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -64,7 +115,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="com.aptana.editor.php" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -168,12 +219,179 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/mvcoop/views/student/student.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/mvcoop/index.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/mvcoop/controllers/student/class.student.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/mvcoop/models/student/class.student_model.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/mvcoop/includes/header.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/mvcoop/auth.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/mvcoop/login.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/mvcoop/controllers/user/class.user.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/mvcoop/models/user/class.user_model.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/mvcoop/views/student/studentnew.php"/>
+</editors>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="1075" y="8"/>
+</item>
+<item historyLabel="student.php" index="0">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="header.php" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="907" y="0"/>
+</item>
+<item historyLabel="header.php" index="4">
+<position/>
+</item>
+<item historyLabel="index.php" index="1">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="907" y="0"/>
+</item>
+<item historyLabel="student.php" index="0">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="index.php" index="1">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="1281" y="0"/>
+</item>
+<item historyLabel="class.student_model.php" index="3">
+<position info="not_deleted" x="1751" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="1281" y="0"/>
+</item>
+<item historyLabel="class.student_model.php" index="3">
+<position info="not_deleted" x="1751" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="1281" y="0"/>
+</item>
+<item historyLabel="student.php" index="0">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="841" y="0"/>
+</item>
+<item historyLabel="class.student_model.php" index="3">
+<position info="not_deleted" x="2213" y="32"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="1333" y="0"/>
+</item>
+<item historyLabel="student.php" index="0">
+<position info="not_deleted" x="2259" y="0"/>
+</item>
+<item historyLabel="auth.php" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.php" index="6">
+<position info="not_deleted" x="584" y="0"/>
+</item>
+<item historyLabel="index.php" index="1">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="class.user.php" index="7">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="class.user_model.php" index="8">
+<position info="not_deleted" x="373" y="0"/>
+</item>
+<item historyLabel="class.user.php" index="7">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="login.php" index="6">
+<position info="not_deleted" x="584" y="0"/>
+</item>
+<item historyLabel="class.user.php" index="7">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="class.user_model.php" index="8">
+<position info="not_deleted" x="373" y="0"/>
+</item>
+<item historyLabel="login.php" index="6">
+<position info="not_deleted" x="584" y="0"/>
+</item>
+<item historyLabel="auth.php" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="1333" y="0"/>
+</item>
+<item historyLabel="index.php" index="1">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="class.user.php" index="7">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="class.user_model.php" index="8">
+<position info="not_deleted" x="373" y="0"/>
+</item>
+<item historyLabel="class.user.php" index="7">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="login.php" index="6">
+<position info="not_deleted" x="653" y="0"/>
+</item>
+<item historyLabel="student.php" index="0">
+<position info="not_deleted" x="2290" y="0"/>
+</item>
+<item historyLabel="login.php" index="6">
+<position info="not_deleted" x="307" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="1333" y="0"/>
+</item>
+<item historyLabel="auth.php" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="1333" y="0"/>
+</item>
+<item historyLabel="index.php" index="1">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="1333" y="0"/>
+</item>
+<item historyLabel="index.php" index="1">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="login.php" index="6">
+<position info="not_deleted" x="307" y="0"/>
+</item>
+<item historyLabel="login.php" index="6">
+<position info="not_deleted" x="465" y="0"/>
+</item>
+<item historyLabel="class.student.php" index="2">
+<position info="not_deleted" x="1333" y="0"/>
+</item>
+<item historyLabel="student.php" index="0">
+<position info="not_deleted" x="2290" y="0"/>
+</item>
+<item historyLabel="studentnew.php" index="9">
+<position info="not_deleted" x="180" y="0"/>
+</item>
+<item active="true" historyLabel="login.php" index="6">
+<position info="not_deleted" x="465" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@19238ad"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -181,54 +399,55 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@86cd32"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="employeenew.php" tooltip="mvcoop/views/employee/employeenew.php">
-<persistable path="/mvcoop/views/employee/employeenew.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="class.user_model.php" tooltip="mvcoop/models/user/class.user_model.php">
+<persistable path="/mvcoop/models/user/class.user_model.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="class.user.php" tooltip="mvcoop/controllers/user/class.user.php">
+<persistable path="/mvcoop/controllers/user/class.user.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="login.php" tooltip="mvcoop/login.php">
+<persistable path="/mvcoop/login.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="auth.php" tooltip="mvcoop/auth.php">
+<persistable path="/mvcoop/auth.php"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="header.php" tooltip="mvcoop/includes/header.php">
 <persistable path="/mvcoop/includes/header.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="employeenew.php" tooltip="mvcoop/views/company/employeenew.php">
-<persistable path="/mvcoop/views/company/employeenew.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="studentnew.php" tooltip="mvcoop/views/student/studentnew.php">
-<persistable path="/mvcoop/views/student/studentnew.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="employee.php" tooltip="mvcoop/views/company/employee.php">
-<persistable path="/mvcoop/views/company/employee.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="student.php" tooltip="mvcoop/views/student/student.php">
-<persistable path="/mvcoop/views/student/student.php"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="class.student_model.php" tooltip="mvcoop/models/student/class.student_model.php">
 <persistable path="/mvcoop/models/student/class.student_model.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="class.employee_model.php" tooltip="mvcoop/models/employee/class.employee_model.php">
-<persistable path="/mvcoop/models/employee/class.employee_model.php"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="class.student.php" tooltip="mvcoop/controllers/student/class.student.php">
 <persistable path="/mvcoop/controllers/student/class.student.php"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="student.php" tooltip="mvcoop/views/student/student.php">
+<persistable path="/mvcoop/views/student/student.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="studentnew.php" tooltip="mvcoop/views/student/studentnew.php">
+<persistable path="/mvcoop/views/student/studentnew.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="index.php" tooltip="mvcoop/index.php">
+<persistable path="/mvcoop/index.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="employeenew.php" tooltip="mvcoop/views/employee/employeenew.php">
+<persistable path="/mvcoop/views/employee/employeenew.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="employeenew.php" tooltip="mvcoop/views/company/employeenew.php">
+<persistable path="/mvcoop/views/company/employeenew.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="employee.php" tooltip="mvcoop/views/company/employee.php">
+<persistable path="/mvcoop/views/company/employee.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="class.employee_model.php" tooltip="mvcoop/models/employee/class.employee_model.php">
+<persistable path="/mvcoop/models/employee/class.employee_model.php"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="class.employee.php" tooltip="mvcoop/controllers/employee/class.employee.php">
 <persistable path="/mvcoop/controllers/employee/class.employee.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="class.mysqlquery.php" tooltip="mvcoop/corelib/classes/class.mysqlquery.php">
-<persistable path="/mvcoop/corelib/classes/class.mysqlquery.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="interface.sqlquerybinding.php" tooltip="mvcoop/corelib/interfaces/interface.sqlquerybinding.php">
-<persistable path="/mvcoop/corelib/interfaces/interface.sqlquerybinding.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="class.dbConn.php" tooltip="mvcoop/corelib/classes/class.dbConn.php">
-<persistable path="/mvcoop/corelib/classes/class.dbConn.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="function.autoload.php" tooltip="mvcoop/corelib/functions/function.autoload.php">
-<persistable path="/mvcoop/corelib/functions/function.autoload.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="autoload.php" tooltip="mvcoop/corelib/functions/autoload.php">
-<persistable path="/mvcoop/corelib/functions/autoload.php"/>
 </file>
 </mruList>
 </workbench>

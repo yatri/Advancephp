@@ -5,6 +5,8 @@ class student_model{
 	private $name;
 	private $address;
 	private $contact;
+	private $textdata;
+	private $seldata;
 	
 	function __construct(){
 	
@@ -36,7 +38,7 @@ class student_model{
 				
 		$sql= "UPDATE tb1_student SET s_name='$this->name',s_address='$this->address',s_contact='$this->contact' WHERE s_id='$this->id'";
 		if(mysql_query($sql)){
-			?><script>window.location.href='index.php?view=student&msg=3';</script><?php
+			?><script>window.location.href='home.php?view=student&msg=3';</script><?php
 		}
 		else {
 			echo "error in editing";
@@ -48,7 +50,7 @@ class student_model{
 		$this->contact=$s_contact;
 		$sql="INSERT INTO tb1_student VALUES('','$this->name','$this->address','$this->contact')";
 		if(mysql_query($sql)){
-			?> <script>window.location.href='index.php?view=student&msg=1';</script> <?php
+			?> <script>window.location.href='home.php?view=student&msg=1';</script> <?php
 		}
 		else {
 			 echo "Error while inserting.";
@@ -59,7 +61,7 @@ class student_model{
 		
 		$sql="DELETE FROM tb1_student WHERE s_id='$this->id'";
 		if(mysql_query($sql)){
-			?><script>window.location.href="index.php?page=student&msg=4";</script><?php
+			?><script>window.location.href="home.php?page=student&msg=4";</script><?php
 		}
 		else {
 			echo"error while deleting data";
@@ -68,12 +70,45 @@ class student_model{
 	function truncatetable(){
 		$sql="TRUNCATE table tbl_student";
 		if(mysql_query($sql)){
-			//header('Location:index.php?msg=2');
-			?><script>window.location.href="index.php?page=student&msg=2";</script><?php
+			//header('Location:home.php?msg=2');
+			?><script>window.location.href="home.php?page=student&msg=2";</script><?php
 		}
 		else {
 		 	echo "Error while deleting all rows.";
 		}	
+	}
+	function getresult($optionsel,$textinput){
+		$this->textdata=$textinput;
+		$this->seldata=$optionsel;
+		switch ($this->seldata) {
+			case 'id':
+				$sql="SELECT * FROM tb1_student WHERE s_id=$this->textdata";
+				$res=mysql_query($sql);
+				$data=mysql_fetch_assoc($res);
+				return $data;
+				break;
+			case 'name':
+				$sql="SELECT * FROM tb1_student WHERE s_name=$this->textdata";
+				$Recordset1 = mysql_query($query_Recordset1) or die(mysql_error());
+				$row=array();
+				while($row_Recordset1 = mysql_fetch_assoc($Recordset1)){
+					$row[]=$row_Recordset1;
+				}
+			return $row;
+			break;
+			case 'address':
+				$sql="SELECT * FROM tb1_student WHERE s_address=$this->textdata";
+				$Recordset1 = mysql_query($query_Recordset1) or die(mysql_error());
+				$row=array();
+				while($row_Recordset1 = mysql_fetch_assoc($Recordset1)){
+					$row[]=$row_Recordset1;
+				}
+				return $row;
+				break;
+			default:
+				
+				break;
+		}
 	}
 }
 ?>

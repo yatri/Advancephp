@@ -16,13 +16,13 @@
 <h4 class="clearboth" style="margin-top:-5px;">Employee Table :</h4>
         <div class="tblstudent"><!--company table starts here-->
         	<div class="top">
-        		<a href="index.php?view=studentnew&folder=std" class="buttons">Add new record</a>
-                <a href="index.php?page=newmulti" class="buttons">Add new multi record</a>
-                <a href="index.php?page=studentdeleteall" class="buttons">Delete all records</a>
+        		<a href="home.php?view=studentnew&folder=std" class="buttons">Add new record</a>
+                <a href="home.php?page=newmulti" class="buttons">Add new multi record</a>
+                <a href="home.php?page=studentdeleteall" class="buttons">Delete all records</a>
         	</div>
             
             
-<form method="post" id="addstudent" action="index.php?action=student&folder=std&mode=add">
+<form method="post" id="addstudent" action="home.php?action=student&folder=std&mode=add">
 <p>
 <label>Name:</label>
 <input id="name" type="text" name="name"  style="width:200px;" value="<?php echo @$data['s_name']; ?>" placeholder="Enter your name">
@@ -41,6 +41,6 @@
 </p>
 <p>
 <input type="submit" value="Save" class="buttons" style="border:none; height:25px;">
-<a href="index.php?view=student&folder=std" class="buttons">Cancel</a>
+<a href="home.php?view=student&folder=std" class="buttons">Cancel</a>
 </p>
 </form>

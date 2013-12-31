@@ -6,8 +6,8 @@
 <h4 class="clearboth" style="margin-top:-5px; padding-bottom:7px;">Employee Table :</h4>
         <div class="tblstudent"><!--student table starts here-->
         	<div class="top">
-        		<a href="index.php?view=employeenew&folder=cmpy" class="buttons">Add new record</a>
-                <a href="index.php?action=employee&mode=truncate" class="buttons">Delete all records</a>
+        		<a href="home.php?view=employeenew&folder=cmpy" class="buttons">Add new record</a>
+                <a href="home.php?action=employee&mode=truncate" class="buttons">Delete all records</a>
         	</div>
 <table>
 	<thead>
@@ -29,10 +29,10 @@
             <td><?php echo $val['e_address'];?></td>
             <td><?php echo $val['e_contact'];?></td>
             <td width="10%" style="text-align:center;">
-           		<a href= "index.php?view=employeenew&folder=cmpy&id=<?php echo $val['e_id'];?>" style="font-family:'Times New Roman', Times, serif; font-size:15px; font-weight:bold;">Edit</a>
+           		<a href= "home.php?view=employeenew&folder=cmpy&id=<?php echo $val['e_id'];?>" style="font-family:'Times New Roman', Times, serif; font-size:15px; font-weight:bold;">Edit</a>
          	</td>
             <td width="10%">
-            	<a href= "index.php?action=employee&folder=cmpy&mode=delete&id=<?php echo $val['e_id'];?>" style="font-family:'Times New Roman', Times, serif; font-size:15px; font-weight:bold;">Delete</a>
+            	<a href= "home.php?action=employee&folder=cmpy&mode=delete&id=<?php echo $val['e_id'];?>" style="font-family:'Times New Roman', Times, serif; font-size:15px; font-weight:bold;">Delete</a>
         	</td>
       	</tr>
   	<?php } ?>

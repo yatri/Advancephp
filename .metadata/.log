@@ -268,3 +268,52 @@ java.lang.IllegalStateException: No match available
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+!SESSION 2013-12-30 16:20:20.138 -----------------------------------------------
+eclipse.buildId=3.4.2.201308081805
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-12-30 18:58:17.792
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-12-30 18:58:17.824
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-12-30 18:58:17.824
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-12-30 18:58:17.824
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+!SESSION 2013-12-31 09:30:55.778 -----------------------------------------------
+eclipse.buildId=3.4.2.201308081805
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.index.core 4 0 2013-12-31 11:25:28.149
+!MESSAGE (Build 3.4.2.201308081805) [ERROR]  Failed to delete index file C:\xampp\htdocs\myworkspace\.metadata\.plugins\com.aptana.index.core\96075266.index
+!STACK 0
+java.io.IOException: Failed to delete index file C:\xampp\htdocs\myworkspace\.metadata\.plugins\com.aptana.index.core\96075266.index
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:946)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:66)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SESSION 2013-12-31 16:33:42.622 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-12-31 16:33:58.838
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
