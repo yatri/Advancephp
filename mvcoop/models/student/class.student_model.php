@@ -5,9 +5,6 @@ class student_model{
 	private $name;
 	private $address;
 	private $contact;
-	private $textdata;
-	private $seldata;
-	
 	function __construct(){
 	
 	}
@@ -78,37 +75,13 @@ class student_model{
 		}	
 	}
 	function getresult($optionsel,$textinput){
-		$this->textdata=$textinput;
-		$this->seldata=$optionsel;
-		switch ($this->seldata) {
-			case 'id':
-				$sql="SELECT * FROM tb1_student WHERE s_id=$this->textdata";
-				$res=mysql_query($sql);
-				$data=mysql_fetch_assoc($res);
-				return $data;
-				break;
-			case 'name':
-				$sql="SELECT * FROM tb1_student WHERE s_name=$this->textdata";
-				$Recordset1 = mysql_query($query_Recordset1) or die(mysql_error());
-				$row=array();
-				while($row_Recordset1 = mysql_fetch_assoc($Recordset1)){
-					$row[]=$row_Recordset1;
-				}
-			return $row;
-			break;
-			case 'address':
-				$sql="SELECT * FROM tb1_student WHERE s_address=$this->textdata";
-				$Recordset1 = mysql_query($query_Recordset1) or die(mysql_error());
-				$row=array();
-				while($row_Recordset1 = mysql_fetch_assoc($Recordset1)){
-					$row[]=$row_Recordset1;
-				}
-				return $row;
-				break;
-			default:
-				
-				break;
+		$sql="SELECT * FROM tb1_student WHERE $optionsel LIKE '%$textinput%'";
+		$Recordset1 = mysql_query($sql) or die(mysql_error());
+		$row=array();
+		while($row_Recordset1 = mysql_fetch_assoc($Recordset1)){
+			$row[]=$row_Recordset1;
 		}
+		return $row;
 	}
 }
 ?>

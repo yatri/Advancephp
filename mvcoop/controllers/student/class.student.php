@@ -50,9 +50,10 @@ class student{
 	function search(){
 		$studentmodelobj=new student_model();
 		if($_POST){
-			$textinput=@$_POST['name'];
+			$textinput=@$_POST['search'];
 			$optionsel=@$_POST['searchwith'];
 			$data=$studentmodelobj->getresult($optionsel,$textinput);
+			return $data;
 		}
 		
 	}

@@ -1,8 +1,15 @@
 <?php 
     include_once('controllers/student/class.student.php');
     $studentviewObj = new Student;
-    $row = $studentviewObj->getAll();
-	$retdata=$studentviewObj->search();
+	if(@$_GET['mode']){
+		$row=$studentviewObj->search();
+		
+	}
+	else {
+		$row = $studentviewObj->getAll();
+	}
+    
+	
  ?>
 <h4 class="clearboth" style="margin-top:-5px; padding-bottom:7px;">Student Table :</h4>
         <div class="tblstudent"><!--student table starts here-->
@@ -45,12 +52,12 @@
         </tr>
     </tfoot>
 </table><br />
- 			<form action="home.php?action=student&folder=std&mode=search">
+ 			<form action="home.php?view=student&folder=std&mode=search" method="post">
                 	<label>Search with</label>
                 	<select name="searchwith">
-					  <option value="id">ID</option>
-					  <option value="name">Name</option>
-					  <option value="address">Address</option>
+					  <option value="s_id">ID</option>
+					  <option value="s_name">Name</option>
+					  <option value="s_address">Address</option>
 					
 					</select>
                 	<input  type="text" name="search" />
