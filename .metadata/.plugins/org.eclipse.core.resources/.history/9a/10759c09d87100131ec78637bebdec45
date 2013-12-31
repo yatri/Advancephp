@@ -1,0 +1,19 @@
+<?php 
+require 'models/user/class.user_model.php';
+class user{
+	private $username;
+	private $password;
+		function __construct(){
+		
+	}
+	function validatefunction(){
+		if($_POST){
+			$this->username=$_POST['username'];
+			$this->password=$_POST['password'];
+			$usermodelobj=new user_model();
+			$data=$usermodelobj->checkIfUserExists($this->username,$this->password);
+		}
+	}
+}
+
+?>

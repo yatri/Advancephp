@@ -1,0 +1,17 @@
+<?php
+class user_model{
+	private $user_name;
+	private $pass;
+	function __construct(){
+		
+	}
+	function getuderid($username,$password){
+		$this->user_name=$username;
+		$this->pass=$password;
+		$sql="SELECT * FROM user WHERE 'user_name'='$this->user_name' AND 'password'='$this->pass'";
+		$data=mysql_query($sql);
+		$val=mysql_fetch_assoc($data);
+		return $val;
+	}
+}
+?>

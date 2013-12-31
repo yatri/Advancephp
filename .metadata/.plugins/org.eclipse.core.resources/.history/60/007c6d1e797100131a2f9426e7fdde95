@@ -1,0 +1,117 @@
+<?php 
+require 'models/student/class.student_model.php';
+class student{
+	private $id;
+	
+	function __construct(){
+		
+	}
+
+	function getAll(){
+		$studentmodelObj = new student_model();
+		$retdata = $studentmodelObj->returnAll();
+		return $retdata;
+
+	}
+	
+	function getsinglerow($id){
+		$this->id=$id;
+		$studentmodelobj=new student_model();
+		$val=$studentmodelobj->getonerow($this->id);
+		return $val;
+	}
+	
+	function addnew(){
+		$sid=$_POST['editid'];
+		$studentmodelObj = new student_model();
+		if($_POST){
+			$sname=$_POST['name'];
+			$saddress=$_POST['address'];
+			$scontact=$_POST['contact'];
+		}
+		if($sid){
+			$studentmodelObj->update($sid,$sname,$saddress,$scontact);
+		}
+		else{
+			$studentmodelObj->addstudent($sname,$saddress,$scontact);
+		}
+		
+	}
+	function deleteStudent(){
+		$s_id=@$_GET['id'];
+		$studentmodelObj = new student_model();
+		$studentmodelObj->deletestd($s_id);
+	}
+	function deleteallrecord(){
+		$studentmodelobj=new student_model();
+		$studentmodelobj->truncatetable();
+	}
+	function search(){
+		if($_POST){
+			$textinput=$_POST['name'];
+			$optionsel=$_POST['searchwith'];
+		}
+		$studentmodelobj=new student_model();
+		$data=$studentmodelobj->getresult($optionsel,$textinput);
+		?>
+		echo"
+		<table>
+	<thead>
+		<tr>
+			<th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th colspan="2">Actions</th>
+   		</tr>
+	</thead>
+    <tbody>
+	<?php 
+		foreach ($data as $val){
+	?>
+    	<tr>
+        	<td style="text-align:center;"><?php echo $val['s_id'];?></td>
+            <td><?php echo $val['s_name'];?></td>
+            <td><?php echo $val['s_address'];?></td>
+            <td><?php echo $val['s_contact'];?></td>
+            <td width="10%" style="text-align:center;">
+           		<a href= "index.php?view=studentnew&folder=std&id=<?php echo $val['s_id'];?>" style="font-family:'Times New Roman', Times, serif; font-size:15px; font-weight:bold;">Edit</a>
+         	</td>
+            <td width="10%">
+            	<a href= "index.php?action=student&folder=std&mode=delete&id=<?php echo $val['s_id'];?>" style="font-family:'Times New Roman', Times, serif; font-size:15px; font-weight:bold;">Delete</a>
+        	</td>
+      	</tr>
+  	<?php } ?>
+    </tbody>
+    <tfoot>
+    	<tr>
+        	<!-- <td colspan="6" style="color:#06C; text-align:center; font-size:14px;">Total number of rows (data inserted) = <?php echo $ct; ?></td> -->
+        </tr>
+    </tfoot>
+</table>";
+		<?php
+	}
+}//end of class
+//for add and edit operations
+if(@$_GET['mode']){
+	$studentObj = new student();
+	$mode = $_GET['mode'];
+	switch($mode){
+		case 'add':
+			$studentObj->addNew();
+		break;
+		case 'delete':
+			$studentObj->deleteStudent();
+			break;
+		case 'truncate':
+			$studentObj->deleteallrecord();
+			break;
+		case 'search':
+			$studentObj->search();
+			break;
+		default:
+
+		}
+	}
+
+
