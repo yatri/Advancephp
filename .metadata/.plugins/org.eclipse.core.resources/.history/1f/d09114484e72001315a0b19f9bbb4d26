@@ -18,7 +18,8 @@
 	<div id="container">
 		<div id="wrapper">
         <div class="date">Current Date: <?php echo date("D-m-y"); ?></div><br>
-        <div class="title" style="font-size:24px; text-decoration:none; margin-top:-20px;">WELCOME <?php echo $values[1]; ?></div> 
+        <h1 style={fontfont-family: arial;
+        	font-color=blue;}>welcome <?php echo $values[1]; ?></h1>
 		<a class="buttons" href="home.php?action=user&folder=user&mode=logout">Logout</a>
         <span><a class="buttons" href="add_menu.php">>>Go to Nav Menu CPanel</a></span> <a class="buttons" href="home.php">>>Go to home page</a><hr>
         <!--<a style="cursor:pointer; font-weight:bold; color:#eeeeee; background:#687bbf; border-radius:6px 6px 0 0; padding:5px;" href="home.php">Home Page</a>-->        

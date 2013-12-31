@@ -6,37 +6,6 @@
 	}
 
 ?>
-<html>
-<head>
-
-
-
-<!--META-->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login Form</title>
-
-<!--STYLESHEETS-->
-<link href="css/stylelogin.css" rel="stylesheet" type="text/css" />
-
-<!--SCRIPTS-->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-<!--Slider-in icons-->
-<script type="text/javascript">
-$(document).ready(function() {
-	
-	$(".username").blur(function() {
-		$(".user-icon").css("left","0px");
-	});
-	
-	
-	$(".password").blur(function() {
-		$(".pass-icon").css("left","0px");
-	});
-});
-</script>
-
-</head>
-<body>
 <!--WRAPPER-->
 <div id="wrapper">
 
@@ -46,7 +15,7 @@ $(document).ready(function() {
     <!--END SLIDE-IN ICONS-->
 
 <!--LOGIN FORM-->
-<form name="login-form" class="login-form" action="index.php?view=login&folder=user" method="post">
+<form name="login-form" class="login-form" action="" method="post">
 
 	<!--HEADER-->
     <div class="header">
@@ -76,5 +45,3 @@ $(document).ready(function() {
 <!--END WRAPPER-->
 
 <!--GRADIENT--><div class="gradient"></div><!--END GRADIENT-->
-</body>
-</html>
