@@ -1,11 +1,9 @@
 <?php
-	include_once 'controllers/user/class.user.php';
-	if($_POST){
-		$userobj=new user;
-		$userobj->validatefunction();
-	}
+include_once 'controllers/user/class.user.php';
 
 ?>
+
+
 <html>
 <head>
 
@@ -37,7 +35,6 @@ $(document).ready(function() {
 
 </head>
 <body>
-	 
 <!--WRAPPER-->
 <div id="wrapper">
 
@@ -47,12 +44,12 @@ $(document).ready(function() {
     <!--END SLIDE-IN ICONS-->
 
 <!--LOGIN FORM-->
-<form name="login-form" class="login-form" action="index.php?view=login&folder=user" method="post">
+<form name="login-form" class="login-form" action="index.php?view=usernew&mode=adduser&folder=user" method="post">
 
 	<!--HEADER-->
     <div class="header">
     <!--TITLE--><h1>Login Form</h1><!--END TITLE-->
-    <!--DESCRIPTION--><span>Fill out the form below to login to my super awesome imaginary control panel.</span><!--END DESCRIPTION-->
+    <!--DESCRIPTION--><span>Fill out the form below to sinin in this site.</span><!--END DESCRIPTION-->
     </div>
     <!--END HEADER-->
 	
@@ -65,8 +62,7 @@ $(document).ready(function() {
     
     <!--FOOTER-->
     <div class="footer">
-    <!--LOGIN BUTTON--><input type="submit" name="submit" value="Login" class="button" /><!--END LOGIN BUTTON-->
-    <!--REGISTER BUTTON--><a class="register" href="index.php?view=usernew&folder=user">Register</a><!--END REGISTER BUTTON-->
+    <!--LOGIN BUTTON--><input type="submit" name="submit" value="Signin" class="button" /><!--END LOGIN BUTTON-->
     </div>
     <!--END FOOTER-->
 

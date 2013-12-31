@@ -20,21 +20,13 @@ class user{
 		<script>window.location.href='index.php'</script>
 		<?php
 	}
-	function addNewUser(){
-		if(@$_POST){
-			$this->username=$_POST['username'];
-			$this->password=$_POST['pass'];
-			$usermodelobj=new user_model();
-			$usermodelobj->createuser($this->username,$this->password);
-		}
-	}
 }
 
 if(@$_GET['mode']){
 		$userObj = new user();
 		$mode = $_GET['mode'];
 		switch($mode){
-			case 'adduser':
+			case 'add':
 				$userObj->addNewUser();
 				break;
 			case 'logout':

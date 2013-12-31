@@ -6,8 +6,7 @@ class user_model{
 		
 	}
 	function checkIfUserExists($username,$password){
-		$password_hash=md5($password);
-		$sql="SELECT * FROM user WHERE user_name='$username' AND password='$password_hash'";
+		$sql="SELECT * FROM user WHERE user_name='$username' AND password='$password'";
 		$res=mysql_query($sql);
 		$row=mysql_num_rows($res);
 		
@@ -23,12 +22,11 @@ class user_model{
 		
 	}
 	function createuser($username,$pass){
-		$password_hash=md5($pass);
 		$sql="SELECT * FROM user WHERE user_name='$username'";
 		$res=mysql_query($sql) or die(mysql_error());
 		$row=mysql_num_rows($res);
 		if($row<1){
-			$sqlnew="INSERT INTO user VALUES('','$username','$password_hash')";
+			$sqlnew="INSERT INTO user VALUES('','$username','$pass')";
 			if(mysql_query($sqlnew)){
 				echo"success"?> <script>window.location.href='index.php?view=login&folder=user'</script>
 				<?php 

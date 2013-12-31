@@ -37,7 +37,6 @@ $(document).ready(function() {
 
 </head>
 <body>
-	 
 <!--WRAPPER-->
 <div id="wrapper">
 
@@ -66,7 +65,7 @@ $(document).ready(function() {
     <!--FOOTER-->
     <div class="footer">
     <!--LOGIN BUTTON--><input type="submit" name="submit" value="Login" class="button" /><!--END LOGIN BUTTON-->
-    <!--REGISTER BUTTON--><a class="register" href="index.php?view=usernew&folder=user">Register</a><!--END REGISTER BUTTON-->
+    <!--REGISTER BUTTON--><a class="register" href="index.php?view=usernew&folder=user"></a><!--END REGISTER BUTTON-->
     </div>
     <!--END FOOTER-->
 

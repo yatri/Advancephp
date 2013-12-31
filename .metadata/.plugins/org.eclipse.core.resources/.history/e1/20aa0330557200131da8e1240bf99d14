@@ -25,7 +25,7 @@ class user{
 			$this->username=$_POST['username'];
 			$this->password=$_POST['pass'];
 			$usermodelobj=new user_model();
-			$usermodelobj->createuser($this->username,$this->password);
+			$usermodelobj->createuser();
 		}
 	}
 }
