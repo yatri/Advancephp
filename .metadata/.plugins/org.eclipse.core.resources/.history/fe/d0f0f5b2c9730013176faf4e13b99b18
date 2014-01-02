@@ -30,12 +30,12 @@ class user_model{
 		if($row<1){
 			$sqlnew="INSERT INTO user VALUES('','$username','$password_hash')";
 			if(mysql_query($sqlnew)){
-				?> <script>window.location.href='index.php?view=login&folder=user'</script>
+				echo"success"?> <script>window.location.href='index.php?view=login&folder=user'</script>
 				<?php 
 			}
 		}
 		else{
-			
+			echo"This username is already pickup plese choose unique username";
 			?> <script>window.location.href='index.php?view=usernew&folder=user&msg=2'</script>
 				<?php 
 		}

@@ -297,7 +297,7 @@ FOOTER
 	bottom: -1px;
 }
 .notify{
-	width: 288px;
+	width: 288px;background:#3dc0f3;
 	padding: 5px;
 	color: #fff;
 	text-align: center;
