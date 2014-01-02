@@ -12,7 +12,7 @@ class user_model{
 		$row=mysql_num_rows($res);
 		
 		if($row==0){
-			?><script>window.location.href='index.php?msg=1';</script>
+			?><script>window.location.href='index.php?view=login';</script>
 			<?php
 		}
 		else{
@@ -30,7 +30,7 @@ class user_model{
 		if($row<1){
 			$sqlnew="INSERT INTO user VALUES('','$username','$password_hash')";
 			if(mysql_query($sqlnew)){
-				echo"success"?> <script>window.location.href='index.php?view=login&folder=user&msg=2'</script>
+				echo"success"?> <script>window.location.href='index.php?view=login&folder=user'</script>
 				<?php 
 			}
 		}

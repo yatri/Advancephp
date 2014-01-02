@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	include 'corelib/functions/function.autoload.php';
-	$mysession=new sessionstartcheck();
+	//$mysession=new sessionstartcheck();
 	$keys = array_keys($_SESSION['user_data']);//this give associative array key.
 	$values = array_values($_SESSION['user_data']);//this give associative array value.
 	

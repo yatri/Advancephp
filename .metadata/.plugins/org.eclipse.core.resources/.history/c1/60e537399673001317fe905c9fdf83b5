@@ -297,22 +297,18 @@ FOOTER
 	bottom: -1px;
 }
 .notify{
-	width: 288px;background:#3dc0f3;
+	width: 55%;background:#3dc0f3;
 	padding: 5px;
 	color: #fff;
 	text-align: center;
 	font-size: 18px;
 	margin-bottom:10px;
-	margin-top:55px;
-	margin-left:530px;
-	position:absolute;
+	margin-top:10px;
+	position:relative;
 	font-family:Tahoma, Geneva, sans-serif;
-	border-color: #F676B2;
-	border-radius: 5px;
 	}
-.notify span{
-	position: absolute;
-	left: 300px;top: 100px;
+.notify span{position: absolute;
+	right: -7px;top: -10px;
 	background: gray;
 	cursor:pointer;
 	}

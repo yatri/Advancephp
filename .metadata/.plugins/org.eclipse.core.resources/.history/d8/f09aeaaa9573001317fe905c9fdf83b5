@@ -1,12 +1,12 @@
 <?php
 	include 'corelib/functions/function.autoload.php';
-	include_once('includes/loginheader.php');
+	
 	$dbConnObj = new dbConn();
 	//$testObj = new Test();  error
 	$dbConnObj->connectToDb('localhost','root','','student');
 	?>
 	<?php 
-	 	
+	 	include_once('includes/header.php');
 		if(@$_GET['msg']){ //show div class notify only if get 'msg'
 					?>
 		<div class="notify">

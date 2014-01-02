@@ -1,23 +1,19 @@
 <?php
 	include 'corelib/functions/function.autoload.php';
-	include_once('includes/loginheader.php');
 	$dbConnObj = new dbConn();
 	//$testObj = new Test();  error
-	$dbConnObj->connectToDb('localhost','root','','student');
-	?>
+	$dbConnObj->connectToDb('localhost','root','','student');?>
 	<?php 
-	 	
 		if(@$_GET['msg']){ //show div class notify only if get 'msg'
 					?>
 		<div class="notify">
         	<p>
             		<?php
-            				
 							if(@$_GET['msg']==1){
-								echo "Username password mismatched";
+								echo "One row Added Successfully";
 							}
 							else if($_GET['msg']==2){
-								echo "This username has already in used plz choose next username.";
+								echo "All rows have been deleted";
 							}
 							else if(@$_GET['msg']==3){
 								echo "Your record updated successfully.";
